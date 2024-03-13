@@ -207,3 +207,128 @@ button {
 .imagenes-redes div {
     margin: 0 5px; 
 }
+/* style page remeras  */
+.Oferta_r {
+    background-color: #265073;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.Header_index_r {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    height: 85px;
+    color: #265073;
+    text-decoration: underline;
+    border:1px solid black;
+}
+nav{
+
+    border-left: 2px solid #265073 ;
+    padding: 10px;
+    
+}
+.Nombre_empresa_r{
+
+    font-size: 26px;
+}
+.Header_index_r .Nombre_empresa_r:hover {
+    transform: scale(1.2);
+}
+
+.Header_index_r .Nav-links_r {
+    list-style: none;
+    display: flex; /* Mostrar los elementos de la lista en línea */
+}
+
+.Header_index_r .Nav-links_r li { 
+    cursor: pointer;   
+    transition: all 0.3s;
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 20px;
+}
+.Header_index_r .Nav-links_r li:hover { 
+    transform: scale(1.2);
+}
+.Header_index_r .Nav-links_r a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contenedor-grid .Buscador_Poductos h1{
+
+    color: #265073;
+    font-size: 20px;
+    padding-right:15px;
+}
+
+.contenedor-grid {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 100px 300px 300px 300px 160px);
+    grid-template-areas: 
+    "Buscador_Poductos Buscador_Poductos Buscador_Poductos Buscador_Poductos"
+    "Pro_l1 Pro_l1 Pro_l1 Pro_l1"
+    "Pro_l2 Pro_l2 Pro_l2 Pro_l2"
+    "Pro_l3 Pro_l3 Pro_l3 Pro_l3"
+    "footer_R footer_R footer_R footer_R";
+    gap: 10px;
+}
+
+.Buscador_Poductos {
+    
+    grid-area: Buscador_Poductos;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.buscador {
+    width: 400px; /* Ancho del input */
+    padding: 10px;
+    text-align: center; /* Centrar el texto dentro del input */
+}
+
+.Pro_l1 {
+
+    grid-area: Pro_l1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    }
+    
+    .imagen {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .imagen img {
+        max-width: 100%; 
+        max-height: 100%; 
+    }
+
+
+.Pro_l2 {
+    background-color: #009A87;
+    grid-area: Pro_l2;
+}
+
+.Pro_l3 {
+    background-color: blueviolet;
+    grid-area: Pro_l3;
+}
+
+.footer_R {
+    background-color: rgb(218, 166, 90);
+    grid-area: footer_R;
+}
