@@ -244,7 +244,8 @@ nav{
 
 .Header_index_r .Nav-links_r {
     list-style: none;
-    display: flex; /* Mostrar los elementos de la lista en línea */
+    display: flex; 
+    flex-wrap: wrap;/* Mostrar los elementos de la lista en línea */
 }
 
 .Header_index_r .Nav-links_r li { 
