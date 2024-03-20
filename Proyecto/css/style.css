@@ -471,8 +471,7 @@ grid-template-rows: repeat(5, 100px 370px 370px 370px 150px);}
     width: 12.75rem;
     height:20.45rem;
     font-size: 14px;
-    margin: 5px;
-   }
+    margin: 5px; }
 button  {
     width: 90px;
     height: 15px;
@@ -481,6 +480,10 @@ button  {
     margin: 2px;
     text-align: center;
 
+}
+.Nav-links_r li a{
+    font-size: 18px;
+    
 }
 
 .Pro_l3{
@@ -538,13 +541,14 @@ height: 100vh;
 
         
     .Nav-links_r li a{
-        font-size: 13px;
+        font-size: 10px;
         
     }
 
     .Nav-links_r {
         padding-left: 1px;
         padding: 1px;
+
 
     } 
 
@@ -670,7 +674,6 @@ height: 100vh;
         order: 2;
         border-bottom:1px solid #265073;
     }
-
     @media (max-width:320px) {
         .Oferta_r{
             font-size:0.8em;
@@ -695,9 +698,4 @@ height: 100vh;
             font-size: 15px;
             padding-right:25px;
             padding-left: 10px;
-        }
-
-
-
-    }
-
+        }}
