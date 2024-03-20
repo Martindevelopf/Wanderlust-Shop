@@ -448,10 +448,8 @@ button {
     }
     .div_2_remeras p{
         font-size: 15px;
-        
-    }
-   
-}
+
+}}
 @media (max-width:768px) {
     .Oferta_r {
         font-size: 1.2em;
@@ -473,8 +471,7 @@ grid-template-rows: repeat(5, 100px 370px 370px 370px 150px);}
     width: 12.75rem;
     height:20.45rem;
     font-size: 14px;
-    margin: 5px;
-   }
+    margin: 5px; }
 button  {
     width: 90px;
     height: 15px;
@@ -483,6 +480,9 @@ button  {
     margin: 2px;
     text-align: center;
 
+}
+.Nav-links_r li a{
+    font-size: 18px;
     
 }
 
@@ -513,7 +513,9 @@ width: 100vw;
 height: 100vh;
 
     }
-   
+
+
+
     .Oferta_r {
         font-size: 1.0em;
         width: 100%;
@@ -531,28 +533,36 @@ height: 100vh;
         flex-wrap: nowrap;
         gap:0px;      
             }
-        
+
     .Nav-links_r li a{
         font-size: 13px;
+
+    }
+
+        
+    .Nav-links_r li a{
+        font-size: 10px;
         
     }
-    
+
     .Nav-links_r {
         padding-left: 1px;
         padding: 1px;
 
+
     } 
-   
+
     .Header_index_r .Nav-links_r {
         flex-wrap: nowrap;
     }
     .contenedor-grid .Buscador_Poductos h1{
         font-size: 14px;
-      
+
     }
     .Buscador_Poductos{
         width:100vw;
-        
+
+
     }
     .buscador{
         width: 250px;
@@ -578,7 +588,6 @@ height: 100vh;
     "Pro_l3 "
     "Pro_l3 "
     "Pro_l3 "
-    
     "footer_R  "
     "footer_R  "
     "footer_R  "
@@ -623,8 +632,6 @@ height: 100vh;
     .div_1 {
         order: 3;
         margin:1px;
-        
-       
 
     } 
     .div_1 img {
@@ -632,7 +639,16 @@ height: 100vh;
         margin:1px;
         border-bottom:1px solid #265073;
         padding: 10px;
+
+
+    }
+    .div_2_remeras  h2{
         
+        font-size:16px;
+    }
+    .footer_R .div_2_remeras h2 p{
+        
+        font-size:10px;
 
     }
 
@@ -640,8 +656,19 @@ height: 100vh;
         order: 1;
         border-bottom:1px solid #265073;
         border-top:1px solid #265073;
+
+        font-size:16px;
     }
+    .footer_R .div_1 img{
+        
+        width: 100px;
+        height: 100px;
     }
+
+
+    }
+
+    
 
     .div_redes {
         order: 2;
@@ -671,8 +698,4 @@ height: 100vh;
             font-size: 15px;
             padding-right:25px;
             padding-left: 10px;
-        }
-
-
-
-    }
+        }}
