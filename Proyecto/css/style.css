@@ -647,4 +647,32 @@ height: 100vh;
         order: 2;
         border-bottom:1px solid #265073;
     }
-    
+    @media (max-width:320px) {
+        .Oferta_r{
+            font-size:0.8em;
+        }
+        .Header_index_r{
+            height: auto;
+        }
+        .Header_index_r {
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .Nav-links_r {
+            flex-direction: column;
+            font-size: 10px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .contenedor-grid .Buscador_Poductos h1{
+
+            font-size: 15px;
+            padding-right:25px;
+            padding-left: 10px;
+        }
+
+
+
+    }
