@@ -244,7 +244,8 @@ nav{
 
 .Header_index_r .Nav-links_r {
     list-style: none;
-    display: flex; /* Mostrar los elementos de la lista en línea */
+    display: flex; 
+    flex-wrap: wrap;/* Mostrar los elementos de la lista en línea */
 }
 
 .Header_index_r .Nav-links_r li { 
@@ -448,9 +449,7 @@ button {
     .div_2_remeras p{
         font-size: 15px;
 
-    }
-
-}
+}}
 @media (max-width:768px) {
     .Oferta_r {
         font-size: 1.2em;
@@ -482,7 +481,6 @@ button  {
     margin: 2px;
     text-align: center;
 
-
 }
 
 .Pro_l3{
@@ -513,6 +511,8 @@ height: 100vh;
 
     }
 
+
+
     .Oferta_r {
         font-size: 1.0em;
         width: 100%;
@@ -536,6 +536,12 @@ height: 100vh;
 
     }
 
+        
+    .Nav-links_r li a{
+        font-size: 13px;
+        
+    }
+
     .Nav-links_r {
         padding-left: 1px;
         padding: 1px;
@@ -551,6 +557,7 @@ height: 100vh;
     }
     .Buscador_Poductos{
         width:100vw;
+
 
     }
     .buscador{
@@ -577,7 +584,6 @@ height: 100vh;
     "Pro_l3 "
     "Pro_l3 "
     "Pro_l3 "
-
     "footer_R  "
     "footer_R  "
     "footer_R  "
@@ -623,8 +629,6 @@ height: 100vh;
         order: 3;
         margin:1px;
 
-
-
     } 
     .div_1 img {
         order: 3;
@@ -641,12 +645,14 @@ height: 100vh;
     .footer_R .div_2_remeras h2 p{
         
         font-size:10px;
+
     }
 
     .div_2_remeras {
         order: 1;
         border-bottom:1px solid #265073;
         border-top:1px solid #265073;
+
         font-size:16px;
     }
     .footer_R .div_1 img{
@@ -655,12 +661,16 @@ height: 100vh;
         height: 100px;
     }
 
+
     }
+
+    
 
     .div_redes {
         order: 2;
         border-bottom:1px solid #265073;
     }
+
     @media (max-width:320px) {
         .Oferta_r{
             font-size:0.8em;
@@ -690,3 +700,4 @@ height: 100vh;
 
 
     }
+
