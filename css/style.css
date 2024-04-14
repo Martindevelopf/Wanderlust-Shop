@@ -654,6 +654,11 @@ button  {
     height: 50px;
 }
 }
+
+
+
+
+
 @media (max-width:425px) {
     .Oferta {
         width: 100%;
@@ -799,6 +804,77 @@ button  {
         border-bottom:1px solid #265073;
     }
 }
+
+
+@media (max-width:375px) {
+    .Oferta{
+        font-size:0.8em;
+    }
+   
+    .Header_index_r {
+        height: 100%;
+        width: 100%;
+        top:0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .Nav-links_r {
+        flex-direction: column;
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+        padding-left:50px;
+        
+    }
+    .Nombre_empresa_r{
+        margin-left: 10 px;
+        padding: 25px;
+    }
+   
+    .contenedor-grid .Buscador_Poductos h1 {
+
+        font-size: 12px;
+        padding-right:25px;
+        padding-left: 10x;
+        top:10px;
+        
+    }
+    .buscador{
+
+        width: 225px;
+    }
+    .Pro_l1 img{
+
+        width: 200px;
+        height: 250px;
+    }
+    
+    .footer{
+        font-size: 10px;
+    }
+    .div_1 img{
+
+        width: 80px;
+        height: 80px;
+    }
+    .div_2_remeras h2 {
+    
+
+        font-size:15px;
+    }
+    .div_2_remeras p {
+    
+
+        font-size:12px;
+        padding-bottom: 15px;
+    }
+    .imagenes-redes img{
+
+        width: 30px;
+        height: 30px;
+    }
     @media (max-width:320px) {
         .Oferta{
             font-size:0.8em;
@@ -863,3 +939,4 @@ button  {
             height: 30px;
         }
     }
+}
