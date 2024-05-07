@@ -1,0 +1,32 @@
+//archivos utilites
+
+@import "utilities/variables.scss";
+@import "utilities/mapas.scss";
+@import "utilities/mixins";
+
+//archivos bases
+@import "base/reset";
+@import "base/footer_general";
+
+//archivos loyouts 
+
+
+@import "layout/Index/Oferta";
+@import "layout/Index/Nav-General";
+@import "layout/Index/main-index";
+@import "layout/Remeras/main_remeras";
+@import "layout/Remeras/Oferta_blue";
+@import "layout/Remeras/nav-General-blue";
+@import "layout/Contacto/Contacto.scss";
+
+
+//mediaQ - RESPONSIVE//
+@import "./layout/MediaQuery/Mquery1440";
+@import "./layout/MediaQuery/Mquery1024";
+@import "./layout/MediaQuery/Mquery768";
+@import "./layout/MediaQuery/Mquery425";
+@import "./layout/MediaQuery/Mquery375";
+@import "./layout/MediaQuery/Mquery320"
+
+
+

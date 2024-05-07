@@ -1,0 +1,11 @@
+@mixin grid($width, $height, $col, $row, $justify, $align, $gap, $area) {
+    display: grid;
+    width: $width;
+    height: $height;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    grid-template-areas: $area;
+}

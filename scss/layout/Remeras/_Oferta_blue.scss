@@ -1,0 +1,5 @@
+.Oferta_40_Blue{
+
+    @extend .Oferta_40;
+    background-color:map-get($paleta_de_colores, azul);
+}

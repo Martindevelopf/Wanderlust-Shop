@@ -1,0 +1,56 @@
+@media (max-width: 375px){
+    .Nav_General {
+        h1 {
+            margin-left: 20px;
+            font-size: 15px;
+        }
+    }
+    
+    
+    
+    
+    .Nav-Links{
+        display:flex;
+        flex-direction: column;
+    }
+    .Header_contacto {
+        height: 120px;
+        .Nombre_empresa_c{
+            font-size:14px; 
+            margin-left: -25px;
+            margin-right: 10px; } 
+            nav {
+                .Nav-links_c{
+                    display: flex;
+                    flex-direction: column;
+                    gap:5px;
+                    li {
+                        a {
+                            font-size: 10px; 
+                        }
+                    }
+                }
+            }
+    
+     }
+     .section-footer{
+       
+        .div_central_footer{
+            h2{
+                font-size: 15px;
+                border-top: solid 2px rgba(0, 154, 135, 0.5); 
+            }
+        }
+        .div_redes{
+            
+            h2{
+                margin-top: 10px;
+                border-top: solid 2px rgba(0, 154, 135, 0.5); 
+              
+            }
+    }
+
+   
+}
+
+}

@@ -1,0 +1,15 @@
+.Nav_General-blue{
+
+    @extend .Nav_General;
+    border-bottom: 1px solid map-get($paleta_de_colores, azul);
+    h1{
+
+        color: map-get($paleta_de_colores, azul);
+    }
+    .Nav-Links{
+
+        border-left: solid 2px map-get($paleta_de_colores, azul); ;
+        color: map-get($paleta_de_colores, azul);
+    }
+
+}

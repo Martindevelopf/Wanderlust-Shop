@@ -1,0 +1,151 @@
+.Header_contacto {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    height: 85px;
+    width: 100%;
+    color: #009A87;
+    text-decoration: underline;
+    border:1px solid #009A87 ;
+    top:0px;
+    .Nombre_empresa_c{
+        font-size:35px;
+        &:hover {
+            transform: scale(1.2);
+                }
+    }
+    nav {
+        ul {
+            list-style: none; 
+            display: flex;
+            justify-content: space-between;
+            gap:100px;
+
+
+            li {
+                margin-right: 10px; 
+                font-size:20px;
+                &:hover { 
+                    transform: scale(1.2);
+                   
+        
+                        } 
+            }
+
+            a {
+                text-decoration: none; 
+                color: inherit; 
+            }
+        }
+    }
+}   
+.h1_Contacto{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+    filter:drop-shadow(10px 5px 10px #009A87);
+    .content{
+        color: #009A87;
+        text-align: center;
+        padding: 20px;
+        font-size: 40px;
+        border: solid 2px  #009A87;
+        border-radius: 60px/20px; //inente de todo pero no me toma los mapas los y esta todo bien importado
+
+        
+        
+
+
+    }
+
+}
+.main_Contacto{
+    background-image: url('../assets/Back_contacto.jpg');
+    background-size:cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin-top: 40px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    .Form_Contacto{
+        padding: 50px 55px;
+        box-shadow: 0 0 20px   white;
+        border-radius: 20px;
+        text-align: center;
+        width: 500px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        h2{
+        color: white;
+        font-size: 35px;
+        }
+        .input-group{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            label{
+                color: white;
+                font-size: 15px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            input, textarea{
+                padding: 17px  25px;
+                border-radius: 25px;
+                margin-bottom: 20px;
+                background-color: #edfff0ea;
+                border: 2px solid #f0faf1;
+                color: black;
+                outline: none;
+            
+            }
+            input::placeholder,
+            textarea::placeholder {
+            color: #8dbd8d;
+            }
+            textarea {
+                width: 100%; 
+                height: 250px; 
+    
+            }
+            .btn {
+
+                font-size: 16px;
+                color : white;
+                border:0px;
+                border-radius: 25px;
+                background-color: #51D94c;
+                box-shadow: 0 0 20px rgba(25,254,0,0.4);
+                cursor: pointer;
+                &:hover{
+                    background-color:#32cf2d;
+                }
+            }
+            .form-txt{
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                a{
+                    padding-top: 30px;
+                    color :#9AD0C2;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    
+                }
+                
+            
+            }
+
+
+        }
+    }
+}

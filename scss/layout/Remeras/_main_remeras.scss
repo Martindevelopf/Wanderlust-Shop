@@ -1,0 +1,256 @@
+.contenedor-grid {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 100px 400px 400px 400px 260px);
+    grid-template-areas: 
+        "Buscador_Poductos Buscador_Poductos Buscador_Poductos Buscador_Poductos"
+        "Pro_l1 Pro_l1 Pro_l1 Pro_l1"
+        "Pro_l2 Pro_l2 Pro_l2 Pro_l2"
+        "Pro_l3 Pro_l3 Pro_l3 Pro_l3"
+        "section-footer section-footer section-footer section-footer ";
+    gap: 10px;
+}
+
+.Buscador_Poductos {
+    grid-area: Buscador_Poductos;
+    border-bottom: 1px solid #265073;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    h1 {
+        color: #265073;
+        font-size: 20px;
+        padding-right: 15px;
+    }
+
+    .buscador {
+        width: 400px; 
+        padding: 10px;
+        text-align: center; 
+        border: 5px solid #265073;
+        border-radius: 20px;
+    }
+}
+
+.Pro_l1 {
+    grid-area: Pro_l1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    h1{
+       text-align: center;
+    }
+
+    div {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        height: 80%;
+       
+        img { 
+            max-width: 100%; 
+            max-height: 100%; 
+            border-radius: 10px;
+        
+           
+
+            &:hover {
+                border: 2px solid #265073;
+            }
+        }
+    }
+}
+
+.Pro_l2 {
+    grid-area: Pro_l2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid  #265073;
+    padding: 15px;
+
+    .Card_2 {
+        width: 15.75rem;
+        height: 23.25rem;
+        border: 1px solid #265073;
+        border-radius: 30px 100px;
+        overflow: hidden;
+        margin: 10px;
+
+
+        &:hover {
+            box-shadow: 0 4px 2px #265073;
+        }
+
+        div {
+            width: 100%;
+            height: 70%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        } 
+
+        .Card_Info_2{
+            text-align: center;
+            font-family: "Gugi", sans-serif;
+            color: #265073;
+            font-size: 17px;
+            h3 {
+                text-align: center;
+                padding: 1em;
+                padding: 5px;
+            }
+            p {
+                margin-bottom: 10px; 
+                position: relative;
+                margin-left: -30px;
+                 
+                &::after {
+                    content: " u$d"; 
+                    color: #000; 
+                    font-weight: bold; 
+                    position: absolute; 
+                    top: 0;
+                    color: #265073; 
+                    
+                }
+            }
+        button {
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 10px; 
+            cursor: pointer; 
+            &:hover{
+                color:map-get($map: $paleta_de_colores, $key: azul ) ;
+                font-weight: bold; 
+            }
+            }   
+        }
+    }
+}
+
+.Pro_l3 {
+    grid-area: Pro_l3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid  #265073;
+    padding: 15px;
+
+    .Card_2 {
+        width: 15.75rem;
+        height: 23.25rem;
+        border: 1px solid #265073;
+        border-radius: 30px 100px;
+        overflow: hidden;
+        margin: 10px;
+
+        &:hover {
+            box-shadow: 0 4px 2px #265073;
+        }
+
+        div {
+            width: 100%;
+            height: 70%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        } 
+
+        .Card_Info_2{
+            text-align: center;
+            font-family: "Gugi", sans-serif;
+            color: #265073;
+            font-size: 17px;
+            h3 {
+                text-align: center;
+                padding: 1em;
+                padding: 5px;
+            }
+            p {
+                margin-bottom: 10px; 
+                position: relative;
+                margin-left: -30px;
+                 
+                &::after {
+                    content: " u$d"; 
+                    color: #000; 
+                    font-weight: bold; 
+                    position: absolute; 
+                    top: 0;
+                    color: #265073; 
+                    
+                }
+            }
+        button {
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 10px; 
+            cursor: pointer; 
+            &:hover{
+                color:map-get($map: $paleta_de_colores, $key: azul ) ;
+                font-weight: bold; 
+            }
+            }   
+        }
+    }
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #beddf7;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-top: 1px solid #265073;
+    padding: 5px;
+
+    div img {
+        width: 100px; 
+        height: auto; 
+
+        padding: 10px; 
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .imagenes-redes div:hover img {
+        transform: scale(1.2);
+    }
+
+    .div_2_remeras,
+    .div_redes {
+        text-align: center; 
+    }
+
+    .div_redes .imagenes-redes {
+        display: flex;
+        flex-direction: row;
+        gap: 2px; 
+        justify-content: center; 
+    }
+
+    h2, p {
+        color: #265073;
+        margin-top: 15px;
+        font-size: 18px;
+        
+    }
+}
+//seguir aca viendo el el footer los tres iconos no me aparecen en row

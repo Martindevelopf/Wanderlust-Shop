@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seccion contactos, en caso de reclamos o devoluciones contactarse por Email"> <!--Metadatos , descripcion pagina web-->
+    <meta name="keywords" content=" Contacto WANDERLUST-SHOP">
+    <meta name = "author" content="Martin Fernandez">
     <title>Contacto</title>
+    <meta property="og:title" content=Contacto-Wanderlust -Shop>
+    <meta property="og:site_name" content=www.Wanderlust-Shop.com>
+    <meta property="og:url" content=->
+    <meta property="og:description" content=Contacto en caso de devoluciones o reclamos>
+    <meta property="og:type" content=website>
+    <meta property="og:image" content=https://unsplash.com/es/fotos/black-rotary-dial-phone-on-white-surface-8gWEAAXJjtI>
     <link  rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/E-mail.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
@@ -12,22 +22,21 @@
 
 </head>
 <body>
-        <header class="Header_index_c" >
+        <header class="Header_contacto">
             <div class = "Nombre_empresa_c">Wanderlust Shop</div>
             <nav>
-                    <ul class="Nav-links_c">
-                        <li><a href="../../index.html">Inicio</a></li>
+                <ul class="Nav-links_c">
+                        <li><a href="../index.html">Inicio</a></li>
                         <li><a  href="./Busos.html">Busos  </a></li>
                         <li><a  href="./Remeras.html">Remeras</a></li>
                         <li><a  href="./Tazas.html">Tazas </a></li>
-
             </nav>  
         </header>
-            <div class="h1_Contacto">
-                <div class="content">
-                    ¿Cómo podemos ayudarte?
-                </div>
+        <div class="h1_Contacto">
+            <div class="content">
+                ¿Cómo podemos ayudarte?
             </div>
+        </div>
 <main class="main_Contacto">
     
     <form class="Form_Contacto">
@@ -45,9 +54,8 @@
             <Input type="email" name="email" id="email" placeholder="Email">
                         
             <label for="message">Mensaje</label>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje">  </textarea>
-            
-        
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Escriba su mensaje aqui..."></textarea>
+                
             <input class="btn" type="submit" value="Enviar">
 
             <div class="form-txt">
@@ -58,25 +66,33 @@
     </div>
     </form>
 </main>
-<footer class="footer_R">
-    <div class="div_1">
+<footer class="section-footer">
+    <div class="icono_footer">
             <img src ="../assets/letra-w.png" alt="logo">
-        </div>
-    <div class="div_2_remeras">
+    </div>
+    <div class="div_central_footer">
             <h2>Sobre Nosotros</h2>
-            <p>¡Descubre calidad, estilo y precios irresistibles en tazas, busos y remeras! <br>
-                Personaliza tus diseños o opta nuestras exclusivas opciones de los mejores <br> diseños 
-                de print on demand. ¡Tu creatividad de estilo comienza aquí!
-            </p>
+            <h3> Compania</h3>
+            <h3> Centro de ayuda</h3>
+            <h3> Devoluciones</h3>
+            <h3> Contacto</h3>
     </div>
     <div class="div_redes">
             <h2>Siguenos</h2>
             <div class="imagenes-redes">
-                <div><img src ="../assets/face_icon.png" alt="face"></div>
-                <div><img src ="../assets/instagram_icon.png" alt="instagram"></div>
-                <div><img src ="../assets/Twitter_icon.png" alt="twitter"></div>
+                <div><img src ="../assets/face_icon.png" alt="Icono de Facebook "></div>
+                <div><img src ="../assets/instagram_icon.png" alt="Icono de Instagram"></div>
+                <div><img src ="../assets/Twitter_icon.png" alt="Icono de Twitter"></div>
             </div>
-        </div>
+    </div>
 </footer>
 
 </html>
+
+<!--.Header_index_c, .Nombre_empresa_c, .Nav-links_c {
+    position: sticky;
+    background-color: white; 
+    z-index: 100;
+    color:#009A87;
+} esto estaba en el css de contacto es para que la barra quede sticky re ver manana viernes 
+-->

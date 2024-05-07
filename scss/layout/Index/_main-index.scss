@@ -1,0 +1,202 @@
+.main-grid{
+    @include grid(100%,100%,1fr 2fr 1fr 1fr,300px 300px  600px 260px,none,none,10px,
+    "section-img-emp section-img-emp  section-img-emp  section-img-emp "
+    "section-imgizq section-central section-central section-imgder"
+    "section-bestsellers section-bestsellers section-bestsellers section-bestsellers"
+    "section-footer section-footer  section-footer section-footer  "
+    );
+
+    .section-img-emp{
+        grid-area: section-img-emp;
+        position: relative;
+        z-index: 1;
+        width: 100vw;
+        img {
+            width: 100%;   
+            height: 100%; 
+            filter: brightness(0.8);
+        
+        }
+        p{
+            position: absolute;
+            top: 80px; 
+            left: 15px;
+            padding: 20px; 
+            color:#fdfeff;
+            width: 100%; 
+            font-size: 25px;
+            text-align: center;
+        
+        }
+       
+    }
+    .section-imgizq{
+        grid-area: section-imgizq;
+        border-radius: 10px;
+        
+        img{
+            width: 100%;   
+            height: 100%; 
+            border-radius: 10px;
+        }
+       
+    }
+    .section-central{
+        grid-area: section-central;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color:white;
+        border: 2px solid #009A87;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 154, 135, 0.5);
+        background: map-get($gradiantes, gradiante_verde_azul);
+
+        h1 {
+            font-size: 35px;
+            margin-bottom: 35px; 
+        }
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .Buscador_Poductos_index{
+           
+             display: flex;
+            justify-content: center; 
+            align-items: center;
+            h1 {
+                color: white;
+                padding-top: 40px;
+                font-size: 20px;
+                padding-right: 15px;
+            }
+            input[type="text"] {
+                width: 400px; 
+                padding: 10px;
+                text-align: center; 
+                border: 5px solid map-get($paleta_de_colores, verde_agua_claro);
+                border-radius: 20px;
+            }
+            input[type="text"].buscador_index {
+                color:map-get($paleta_de_colores,azul); 
+                font-weight: bold; 
+            }
+
+        }
+    
+    
+    }
+    
+.section-imgder{
+    grid-area: section-imgder;
+    img{
+        width: 100%;   
+        height: 100%; 
+        border-radius: 10px;
+    }
+ 
+    
+}
+.section-bestsellers{
+    grid-area: section-bestsellers;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+    div{
+        h2 {
+            text-align: center;
+            color: #009A87;
+            padding: 25px;
+        }
+        .Card_1 {
+            width: 18.75rem;
+            height: 24.25rem;
+            border: 1px solid black;
+            border-radius: 30px 100px;
+            overflow: hidden;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            &:hover {
+                transform: scale(1.05); 
+                box-shadow: 0 0 20px rgba(0, 154, 135, 0.5); 
+                background-color:#265073; 
+                .Card_Info {
+                    color: white; 
+                    
+                    p::after {
+                        color: white; 
+                    }
+                   
+                }
+            }
+            div{
+                width: 100%;
+                height: 70%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            
+            
+            }
+            .Card_Info {
+                text-align: center;
+                font-family: "Gugi", sans-serif;
+                color: #009A87;
+                font-size: 17px;
+                h3 {
+                    text-align: center;
+                    padding: 1em;
+                    padding: 5px;
+                }
+                p {
+                    margin-bottom: 10px; 
+                    position: relative;
+                    margin-left: -30px;
+                     
+                    &::after {
+                        content: " u$d"; 
+                        color: #000; 
+                        font-weight: bold; 
+                        position: absolute; 
+                        top: 0;
+                        color: #009A87; 
+                        
+                    }
+                }
+            button {
+                font-size: 15px;
+                padding: 5px;
+                border-radius: 10px; 
+                cursor: pointer; 
+                &:hover{
+                    color:map-get($map: $paleta_de_colores, $key: azul ) ;
+                    font-weight: bold; 
+                }
+                }   
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
